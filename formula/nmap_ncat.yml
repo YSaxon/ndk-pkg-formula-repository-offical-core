@@ -1,0 +1,9 @@
+summary: Port scanning tool plus improved netcat
+git-url: https://github.com/nmap/nmap
+src-url: https://nmap.org/dist/nmap-7.94.tgz
+src-sha: 7EBC3A0D369D5965BA8B6513BCE3FF6D3307A7CC87DD18F70D0AF5D8E66A2849
+license: NPSL
+bsystem: gmake
+install: |
+      run ./configure &&
+      gmakew
