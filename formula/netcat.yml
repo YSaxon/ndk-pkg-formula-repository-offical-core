@@ -1,0 +1,4 @@
+summary: GNU Netcat
+src-url: http://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz
+license: GPL
+bsystem: configure
