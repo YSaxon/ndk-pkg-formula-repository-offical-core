@@ -7,6 +7,7 @@ fix-sha: 4f988584f1fd144cdc3a30af104659e77c267b1eeea2757414f0105ceebaa407
 license: GPL
 bsystem: configure
 do_patch: |
-  sed_in_place: '/#define RENAME_NOREPLACE/d' bundled/linux/include/uapi/linux/fs.h
-  sed_in_place: '/#define RENAME_EXCHANGE/d' bundled/linux/include/uapi/linux/fs.h
-  sed_in_place: '/#define RENAME_WHITEOUT/d' bundled/linux/include/uapi/linux/fs.h
+  tree: bundled/linux/include/uapi
+  sed_in_place: '/#define RENAME_NOREPLACE.*/d' bundled/linux/include/uapi/linux/fs.h
+  sed_in_place: '/#define RENAME_EXCHANGE.*/d' bundled/linux/include/uapi/linux/fs.h
+  sed_in_place: '/#define RENAME_WHITEOUT.*/d' bundled/linux/include/uapi/linux/fs.h
