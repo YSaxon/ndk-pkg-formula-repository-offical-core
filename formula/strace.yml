@@ -6,3 +6,5 @@ fix-url: https://github.com/Pegasust/strace/commit/22dc213d556bb88e26040f955048c
 fix-sha: 4f988584f1fd144cdc3a30af104659e77c267b1eeea2757414f0105ceebaa407
 license: GPL
 bsystem: configure
+dep-upp: patch
+dopatch: patch -p0 < ../fix/421b4186c06b705163e64dc85f271ebdcf67660af8667283147d5e859fc8a96c
