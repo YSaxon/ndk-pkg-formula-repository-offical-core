@@ -2,5 +2,7 @@ summary: Strace Utility
 git-url: https://github.com/strace/strace.git
 src-url: https://github.com/strace/strace/releases/download/v6.6/strace-6.6.tar.xz
 src-sha: 421b4186c06b705163e64dc85f271ebdcf67660af8667283147d5e859fc8a96c
+fix-url: https://github.com/Pegasust/strace/commit/22dc213d556bb88e26040f955048c729aedd6805.patch
+fix-sha: 4f988584f1fd144cdc3a30af104659e77c267b1eeea2757414f0105ceebaa407
 license: GPL
 bsystem: configure
