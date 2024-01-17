@@ -13,3 +13,4 @@ dopatch: |
   sed_in_place '1s/^/#include <netinet\/in.h>\n/' src/net.c
   sed_in_place '1s/^/#include <netinet\/in.h>\n#define in_addr_t uint32_t\n/' src/msghdr.c
   sed_in_place '1s/^/#include <netinet\/in.h>\n#define in_addr_t uint32_t\n/' src/netlink_inet_diag.c
+  sed_in_place '$a AC_CHECK_TYPES([in_addr_t], [], [AC_DEFINE([in_addr_t], [uint32_t], [Typedef for Android])])' configure.ac
