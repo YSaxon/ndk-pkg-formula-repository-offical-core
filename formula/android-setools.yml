@@ -1,4 +1,6 @@
 summary: SELinux tools
 web-url: https://github.com/jakev/android-setools
 git-url: https://github.com/jakev/android-setools.git
-bsystem: make
+build0: |
+          make build
+          sudo make install
